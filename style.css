@@ -54,19 +54,6 @@
     border: 5px solid #fff;
  }
 
- ul li {
-    margin-top: 50px;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 50px;
-    font-weight: 700;
-    margin-left: 20px;
-    }
-
-   .ss {
-   position: relative;
-   left: 30px;
-  }  
 
  #bgt {
     position: fixed;
@@ -81,32 +68,10 @@
     width: 85rem;
  } 
 
- #followers {
-    position: relative;
-    top: 20px;
-    left: -50px;
-    font-weight: 400;
- }
-
- #likes {
-    position: relative;
-    top: 20px;
-    left: -40px;
-    font-weight: 400;
- }
-
- #photos {
-    position: relative;
-    top: 20px;
-    left: -40px;
-    font-weight: 400;
- }
-
  hr {
-    position: relative;
     width: 100%;
     float: left;
-    top: 30px;
+    margin-top: 25px;
     border-color: rgba(138, 130, 130, 0.185);
  }
 
@@ -119,8 +84,37 @@
  span {
     margin-top: 10px;
     font-weight: 400;
-    color: hsl(0, 0%, 59%);
+   font-weight: 700;
  }
+
+ .statistics {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1rem;
+}
+
+.followers,
+.likes,
+.photos {
+   min-width: 6rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.1rem;
+}
+
+p {
+   color: hsl(0, 0%, 59%);
+   font-size: 0.9rem;
+   margin-top: 5px;
+}
+
+.bold {
+   color: hsl(0, 0%, 59%);
+   font-weight: 400;
+}
 
  @media screen and (max-width: 650px) {
    #bgt {
